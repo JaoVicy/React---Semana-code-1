@@ -1,14 +1,14 @@
+import ImcForm from "./components/ImcForm/Index";
 import Title from "./components/Title";
 
 
 function App() {
-
-
-  return(
+  return (
     <>
-      <Title/>
+        <Title />
+        <ImcForm />
     </>
-  )
+);
 }
 
-export default App
+export default App;

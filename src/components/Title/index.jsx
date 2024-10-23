@@ -1,3 +1,4 @@
+import React, { useState } from 'react'
 import './title.css'
 
 const Title = () => {
