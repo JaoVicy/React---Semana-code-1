@@ -3,14 +3,14 @@ import './title.css'
 const Title = () => {
     
     const ImageTitle = {
-        name: 'image1',
+        name: 'Calculadora Peso X Altura, React',
         avatar: 'https://drpaulopittelli.com.br/wp-content/uploads/2017/11/175-x-175-3.png'
     }
     
     return(
-        <div>
+        <div className='ImageTitle-container'>
             <img className='ImageTitle-avatar' src={ImageTitle.avatar}/>
-            <h3 className='ImageTitle-name'>{ImageTitle.name}</h3>
+            <h2 className='ImageTitle-name'>{ImageTitle.name}</h2>
         </div>
         
     )

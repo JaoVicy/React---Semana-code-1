@@ -1,8 +1,28 @@
-.ImageTitle-avatar{
-    width: 180px;
-    height: 180px;
+body {
+    margin: 0; /* Remove a margem padrão do body */
+    padding: 0; /* Remove o padding padrão do body */
+    display: flex; /* Usa flexbox */
+    flex-direction: column; /* Alinha os filhos na coluna */
+    align-items: flex-start; /* Alinha os itens à esquerda */
+    justify-content: flex-start; /* Alinha os itens no topo */
+    height: 100vh; /* Usa 100% da altura da viewport */
+    background-color: #ecf0f1;
 }
 
-.ImageTitle-name{
+.ImageTitle-container {
+    display: flex;          /* Usando flexbox */
+    align-items: center;   /* Alinhando verticalmente ao centro */
+    justify-content: space-between; /* Espaçamento entre os itens */
+}
+
+.ImageTitle-avatar {
+    width: 380px;          /* Mantendo o tamanho desejado */
+    height: 280px;         /* Mantendo o tamanho desejado */
+    margin-right: 15px;    /* Espaço entre a imagem e o título */
+}
+
+.ImageTitle-name {
     font-family: 'Courier New', Courier, monospace;
+    font-size: 80px;
+    color: #34495e;      /* Ajuste o tamanho da fonte como desejar */
 }
