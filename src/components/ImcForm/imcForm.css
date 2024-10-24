@@ -17,6 +17,14 @@ input {
     margin-bottom: 10px;
 }
 
+h2 {
+    color: #34495e;
+}
+
+label {
+    color: #34495e;
+}
+
 .resultado {
     margin-top: 20px;
     padding: 10px;
