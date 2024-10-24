@@ -62,9 +62,10 @@ const ImcForm = () => {
 
     return (
         <div className="imc-container">
-            <h2>Cálculo do IMC</h2>
+            
             <form onSubmit={calcIMC}>
                 <div>
+                <h2>Cálculo do IMC</h2>
                     <label>Altura (cm): </label>
                     <input 
                         type="number" 
@@ -87,7 +88,7 @@ const ImcForm = () => {
 
             {result && (
                 <div className="resultado">
-                    <h3>Seu IMC: {result}</h3>
+                    <h3>Seu IMC:{result}</h3>
                     <h4>Classificação: {clasifc}</h4>
                 </div>
             )}

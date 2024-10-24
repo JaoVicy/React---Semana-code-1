@@ -1,8 +1,18 @@
 .imc-container {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* Alinha à esquerda */
+    flex-direction: row; /* Alinha lado a lado */
+    justify-content: center; /* Centraliza no eixo horizontal */
+    align-items: flex-start; /* Alinha o conteúdo ao topo */
+    gap: 20px; /* Espaçamento entre as caixas */
     margin: 20px;
+}
+
+.imc-container form, .resultado {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
 }
 
 form {
@@ -18,6 +28,14 @@ input {
 }
 
 h2 {
+    color: #34495e;
+}
+
+h3 {
+    color: #34495e;
+}
+
+h4 {
     color: #34495e;
 }
 
