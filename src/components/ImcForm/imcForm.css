@@ -48,4 +48,13 @@ label {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    opacity: 0; /* Começa invisível */
+    transform: translateX(50px); /* Desloca o resultado para fora da tela inicialmente */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Animação de opacidade e movimento */
+}
+
+/* Classe para quando o resultado for visível */
+.resultado.show {
+    opacity: 1; /* Torna o resultado visível */
+    transform: translateX(0); /* Move o resultado para a posição original */
 }
