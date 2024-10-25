@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
 body {
     margin: 0; /* Remove a margem padrão do body */
     padding: 0; /* Remove o padding padrão do body */
@@ -13,7 +16,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 40px;  /* Adicionando padding */
+    padding: 20px 1px 20px 10px;  /* Adicionando padding */
     width: 100%;         /* Fazer com que ocupe a largura total */
     background-color: #fff; /* Pode ser uma cor neutra */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
@@ -23,13 +26,14 @@ body {
 .ImageTitle-avatar {
     width: 380px;          /* Mantendo o tamanho desejado */
     height: 280px;         /* Mantendo o tamanho desejado */
-    margin-right: 15px;    /* Espaço entre a imagem e o título */
+    margin-right: 1px;    /* Espaço entre a imagem e o título */
 }
 
 .ImageTitle-name {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 3rem; /* Escalável conforme o tamanho da tela */
+    font-family: "DM Serif Display", serif;
+    font-size: 2rem; /* Escalável conforme o tamanho da tela */
     color: #34495e;
-    margin-left: 20px;
-    text-align: right; /* Alinhar o título à direita */
+    margin-left: 10px;
+    margin-right: 40px;
+    text-align: center; /* Alinhar o título à direita */
 }
