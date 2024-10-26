@@ -5,6 +5,8 @@
     align-items: flex-start; /* Alinha o conteúdo ao topo */
     gap: 20px; /* Espaçamento entre as caixas */
     margin: 20px;
+    max-width: 100%; /* Impede que ultrapasse a largura total */
+    overflow-x: hidden; /* Remove a rolagem horizontal */
 }
 
 .imc-container form, .resultado {
@@ -21,25 +23,14 @@ form {
 
 label {
     margin-right: 10px;
+    color: #34495e;
 }
 
 input {
     margin-bottom: 10px;
 }
 
-h2 {
-    color: #34495e;
-}
-
-h3 {
-    color: #34495e;
-}
-
-h4 {
-    color: #34495e;
-}
-
-label {
+h2, h3, h4 {
     color: #34495e;
 }
 
@@ -57,4 +48,36 @@ label {
 .resultado.show {
     opacity: 1; /* Torna o resultado visível */
     transform: translateX(0); /* Move o resultado para a posição original */
+}
+
+/* Responsividade para tablets e telas menores */
+@media (max-width: 768px) {
+    .imc-container {
+        flex-direction: column; /* Muda para coluna */
+        align-items: center; /* Centraliza verticalmente */
+        max-width: 90%; /* Ajusta a largura para caber melhor */
+        padding: 15px;
+    }
+
+    .imc-container form, .resultado {
+        width: 100%; /* Ajusta largura para caber em telas menores */
+    }
+
+    .resultado {
+        font-size: 1rem;
+        padding: 10px;
+    }
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 480px) {
+    .imc-container {
+        max-width: 95%; /* Aumenta a ocupação para caber na tela */
+        padding: 10px;
+    }
+
+    .resultado {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
 }
